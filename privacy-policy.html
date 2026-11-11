@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firebreak — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Firebreak, the Android app that checks a web link before it opens.">
+<link rel="icon" href="logo.png">
+<style>
+  :root {
+    --bg: #080d14;
+    --panel: #0e1624;
+    --border: #1e2c40;
+    --text: #eef3f8;
+    --muted: #b9c6d4;
+    --ember: #ff8a3c;
+    --link: #7fc4ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 16px 96px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header img { width: 190px; height: auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 28px 0 6px; letter-spacing: -0.4px; }
+  h2 {
+    font-size: 1.22rem; margin: 44px 0 12px; padding-top: 22px;
+    border-top: 1px solid var(--border); letter-spacing: -0.2px;
+  }
+  h3 { font-size: 1.02rem; margin: 26px 0 8px; color: var(--ember); }
+  .updated { color: var(--muted); font-size: 0.92rem; margin: 0 0 28px; }
+  p, li { color: var(--text); }
+  .lead { color: var(--muted); }
+  ul { padding-left: 22px; }
+  li { margin: 7px 0; }
+  a { color: var(--link); }
+  a:hover { color: #a9d9ff; }
+  strong { color: #fff; }
+  table { width: 100%; border-collapse: collapse; margin: 18px 0; font-size: 0.96rem; }
+  th, td { text-align: left; padding: 11px 12px; border: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--panel); color: #fff; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 12px; padding: 18px 20px; margin: 22px 0;
+  }
+  .card ul { margin: 0; }
+  footer {
+    margin-top: 52px; padding-top: 22px; border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.9rem;
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 32px 16px 72px; }
+    header img { width: 150px; }
+    h1 { font-size: 1.55rem; }
+    table, th, td { font-size: 0.9rem; }
+    th, td { padding: 9px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="logo.png" alt="Firebreak">
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 11 November 2026</p>
+
+  <p class="lead">
+    Firebreak checks a web link before it opens. This policy explains exactly
+    what the app does and does not send anywhere. It describes the app's real
+    behaviour; where the app has two modes, both are described, because which
+    one applies depends on the build you installed.
+  </p>
+
+  <div class="card">
+    <h3 style="margin-top:0">The short version</h3>
+    <ul>
+      <li>There is <strong>no account</strong> and <strong>no sign-up</strong>. We never ask who you are.</li>
+      <li>There is <strong>no advertising ID</strong>, no analytics SDK and no third-party tracker.</li>
+      <li>The link checks that run <strong>on your phone</strong> send nothing anywhere at all.</li>
+      <li>We never sell or share your data, because we do not hold data about you.</li>
+    </ul>
+  </div>
+
+  <h2>1. What Firebreak does on your phone</h2>
+  <p>
+    When you tap a link, Firebreak examines the <strong>web address</strong> on
+    the device itself. It compares that address against a list of well-known
+    organisations and popular sites built into the app, looking for imitations —
+    an address that copies a real name but changes the ending, or one that uses
+    lookalike letters from another alphabet.
+  </p>
+  <p>
+    These checks need no internet connection. They work in airplane mode.
+    <strong>Nothing about them leaves your phone.</strong>
+  </p>
+  <p>
+    Firebreak also keeps two running totals on the device — how many links it
+    has checked and how many downloads it has blocked — along with your
+    settings. This is stored only in the app's private storage on your phone, is
+    never transmitted, and is erased when you uninstall the app.
+  </p>
+
+  <h2>2. When Firebreak contacts a server</h2>
+  <p>
+    Some builds of Firebreak can also open a page in a sandbox on our server, to
+    photograph it and read its text without your phone ever loading it.
+    <strong>This only happens if a scanning server is configured in the app.</strong>
+    If it is not, Firebreak makes no network request of its own and this entire
+    section does not apply to you.
+  </p>
+  <p>When a deep scan does run, the app sends over an encrypted HTTPS connection:</p>
+  <table>
+    <thead>
+      <tr><th>What is sent</th><th>Why</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>The web address you are checking</strong></td>
+        <td>It is the thing being checked. There is no way to check a link without it.</td>
+      </tr>
+      <tr>
+        <td><strong>A random install identifier</strong></td>
+        <td>To count your free monthly scans.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    About that identifier: it is a <strong>random value created when you install
+    the app</strong>. It is not your phone's hardware ID, advertising ID, phone
+    number, or any account name, and it cannot be traced back to you or your
+    device by us or by anyone else. The server stores only a one-way
+    cryptographic hash of it, never the value itself. Reinstalling the app
+    produces a new, unrelated identifier.
+  </p>
+  <p>
+    We do <strong>not</strong> send your contacts, your messages, your SMS inbox,
+    your location, your installed apps, or anything else from your phone.
+    Firebreak never reads your messages: when you tap a link in a messaging app,
+    Android hands Firebreak that one link and nothing else.
+  </p>
+  <p>
+    <strong>Retention.</strong> A scan result is cached briefly so re-checking
+    the same link is fast, then discarded. Scan counts are kept for the current
+    calendar month so the free allowance can reset.
+  </p>
+
+  <h2>3. Permissions</h2>
+  <p>
+    Firebreak requests only two, and neither is a sensitive permission that
+    Android asks you to approve:
+  </p>
+  <ul>
+    <li><strong>Internet access</strong> — used only for deep scans and subscription checks.</li>
+    <li><strong>Network state</strong> — to tell whether you are online before trying.</li>
+  </ul>
+  <p>
+    Firebreak asks for <strong>no</strong> access to your location, camera,
+    microphone, contacts, SMS, call logs, photos or files.
+  </p>
+  <p>
+    Firebreak will ask to be your <strong>default browser</strong>. This is how
+    Android lets it see a link before another app opens it. It does not grant
+    Firebreak access to your browsing history in any other browser.
+  </p>
+
+  <h2>4. Subscriptions</h2>
+  <p>
+    If you subscribe, the purchase is handled entirely by <strong>Google
+    Play</strong>. We never see your card, your UPI ID or your billing address.
+  </p>
+  <p>
+    To confirm a subscription is genuine, the app sends the purchase token
+    Google issued to our server, which checks it with Google's Play Developer
+    API and records that this install is entitled to Pro. Google's own handling
+    of your payment is covered by
+    <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.
+  </p>
+
+  <h2>5. Naming of other organisations</h2>
+  <p>
+    Firebreak names organisations such as banks and government services when it
+    detects an address <strong>imitating</strong> them. This is what makes the
+    warning useful. It does not mean Firebreak is affiliated with, endorsed by,
+    or connected to any of them.
+  </p>
+
+  <h2>6. Children</h2>
+  <p>
+    Firebreak is not directed at children and we do not knowingly collect
+    anything from them. Since the app collects no personal information from
+    anyone, it holds none about children either.
+  </p>
+
+  <h2>7. Your rights</h2>
+  <p>
+    Because Firebreak holds no information that identifies you, there is no
+    account to access, export or delete.
+  </p>
+  <p>
+    To remove everything the app has stored on your phone, uninstall it, or use
+    <strong>Android Settings → Apps → Firebreak → Storage → Clear data</strong>.
+    To end a subscription, use <strong>Google Play → Payments &amp; subscriptions</strong>.
+  </p>
+
+  <h2>8. Changes</h2>
+  <p>
+    If this policy changes in a way that affects what is collected, the updated
+    version will be published here with a new date before the change takes
+    effect.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    Questions about this policy:
+    <a href="mailto:chatbriefsupport@gmail.com">chatbriefsupport@gmail.com</a>
+  </p>
+
+  <footer>
+    Firebreak — Scam Link Checker · Android package <code>com.firebreak.app</code>
+  </footer>
+
+</div>
+</body>
+</html>
